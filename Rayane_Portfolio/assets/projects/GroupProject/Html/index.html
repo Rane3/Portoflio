@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/desktop.css" media="(min-width: 651px)">
+    <link rel="stylesheet" type="text/css" media="(max-width: 650px)" href="../Css/mobile.css">
+    <script src="../JavaScript/gameSetup.js" defer></script>
+    <script src="../JavaScript/cheat.js" defer></script>
+    <script src="../JavaScript/tileSelection.js" defer></script>
+    <script src="../JavaScript/roundSubmit.js" defer></script>
+    <script src="../JavaScript/helpers.js" defer></script>
+    <script src="../JavaScript/leaderboard.js" defer></script>
+    <title>Colours Game</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>RAYANE & SOUFIANE'S COLOUR GAME</h1>
+    </header>
+    <div id="overlay">
+        <div id="popup">
+            <span id="message">This is the popup message.</span>
+            <button id="tryAgainButton">Try Again!</button>
+        </div>
+    </div>
+    <h2 id="subheader">Game Setup</h2>
+    <form id="gamesetuparea">
+        <div id="gameselection">
+            <div class="gamesetup">
+                <label for="playername">PLAYER NAME</label>
+
+                <input name="playername" id="playername" type="text" pattern="^(?:\s*\w\s*){5,}$" required>
+
+            </div>
+            <div class="gamesetup">
+                <label for="boardSize">GAME BOARD SIZE</label>
+                <input name="gameboardsize" id="boardSize" type="number" required max="7" min="3">
+            </div>
+            <div class="gamesetup">
+                <label for="colour">COLOR</label>
+                <select name="colour" id="colour">
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                </select>
+            </div>
+            <div id="difficulty" class="gamesetup">
+                <label for="difficultyInput">DIFFICULTY</label>
+
+                <input id="difficultyInput" name="difficulty" type="range" step="1" min="0" max="3">
+            </div>
+        </div>
+        <div id="submitbutton">
+            <input type="submit" id="submit" value="Start game!">
+        </div>
+    </form>
+    <div id="mainsection">
+        <div id="mainContainer">
+            <div id="gamecolors">
+                <div id="colorstopress">
+                </div>
+                <div id="liveinfo">
+                    <p></p>
+                </div>
+
+
+                <button type="submit" id="gamesubmit">Submit your guess!</button>
+
+
+
+            </div>
+            <div id="leaderboard">
+                <div id="leaderboardfirstpart">
+                    <header>
+                        <h2 id="highscores">Scores</h2>
+                    </header>
+                </div>
+                <div id="leaderboardsecondpart">
+                    <div id="playernames">
+                    </div>
+                    <div id="scores">
+                    </div>
+                </div>
+                <div id="leaderboardlastpart">
+                    <button id="resetbutton">CLEAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright© Rayane Knadry | Soufiane Knadry 2023</p>
+    </footer>
+</body>
+
+</html>
