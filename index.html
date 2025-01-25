@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/aos.css" />
   <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="./assets/css/extras.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <script defer src="./assets/js/aos.js"></script>
   <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
@@ -16,8 +17,12 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
   <!--NavBar-->
-  <nav class="navbar mainNav navbar-expand-md navbar-dark fixed-top">
-    <div class="container flex-md-column">
+  <nav class="navbar mainNav navbar-expand-md navbar-dark flex-column  fixed-top">
+    <div id="myImgContainer">
+      <img id="myImage" src="assets/images/face.png" alt="Profile Picture"  />
+
+    </div>
+    <div class="container lower-container flex-md-column">
       <a id="heading" href="#">
         <span class="h2">Rayane Knadry</span>
       </a>
@@ -163,11 +168,41 @@
     <!--Projects-->
     <section class="px-md-5" attribute="section" id="projects">
       <div class="container" style="margin-top: 80px; margin-bottom: 80px">
-        <div class="row p-4">
-          <div class="col-lg-8">
-            <h5 class="text-brand" data-aos="fade-up" style="font-weight: bold; color: #ffc107">
+        <div class="row p-4 flex-row flex-wrap">
+          <div class="d-flex align-items-center  col-lg-2">
+            <h5  class="text-brand " data-aos="fade-up" style="font-weight: bold; color: #ffc107; text-align: center;">
               My Projects
             </h5>
+          </div>
+          <div class="project-filters-box ">
+            <div class="content">
+              <label class="checkBox">
+                <input id="ch1"checked type="checkbox">
+                <div class="transition"></div>
+              </label>
+              <div class="filter-name">Web Apps</div>
+            </div>
+            <div style="border-left: 2px solid rgb(255, 255, 255); height: 30px; border-radius: 50px; margin:0px 20px;"></div>
+            <div class="content">
+              <label class="checkBox">
+                <input id="ch2" checked type="checkbox">
+                <div class="transition"></div>
+              </label>
+              <div class="filter-name">Native Apps</div>
+            </div>
+            <div style="border-left: 2px solid rgb(255, 255, 255); height: 30px; border-radius: 50px; margin:0px 20px;"></div>
+            <div class="content">
+              <label class="checkBox">
+                <input id="ch3" checked type="checkbox">
+                <div class="transition"></div>
+              </label>
+              <div class="filter-name">Mobile Apps</div>
+            </div>
+        
+
+            
+            
+            
           </div>
         </div>
         <p class="skillSectionHeader" data-aos-delay="100" data-aos="fade-up" style="
@@ -228,13 +263,15 @@
                 successfully deployed the application and ensured seamless client-server communication.
               </div>
               <div class="lastRow">
-                <div class="tryIt" style="margin-right: 20px;">
+                <div class="tryIt">
                   <a href="http://3.96.208.175/" target="_blank" class="popUpButton">Try It</a>
                 </div>
-                <!-- <div class="gitRepo" style="margin-left: 20px">
-                  <a href="https://gitlab.com/dawson-csy3-24-25/520/section1/teams/TeamG-13/520-project-kamal-knadry-tello" target="_blank"
-                    class="gitRepoButton">Git</a>
-                </div> -->
+                <div class="gitRepo" style="margin-left: 20px">
+                 
+                    <a href="https://gitlab.com/S0UR4Y/mern-data-webapp/-/tree/main" target="_blank"
+                      class="gitRepoButton">Git</a>
+                
+                </div>
               </div>
             </div>
           </div>
@@ -265,7 +302,7 @@
                   <div class="css label">
                     <p>Flask</p>
                   </div>
-            
+
                   <div class="css label">
                     <p>Oracle SQL</p>
                   </div>
@@ -424,7 +461,7 @@
         <div id="bookModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <video id="bookModalVideo"  style="width: 700px; height: 700px;" autoplay controls>
+            <video id="bookModalVideo" style="width: 700px; height: 700px;" autoplay controls>
               <source src="assets/videos/Books.mp4" type="video/mp4" />
             </video>
           </div>
@@ -451,12 +488,11 @@
               controls></video>
           </div>
         </div>
-         <!-- Modal for Paintdrops -->
-         <div id="paintDropsModal" class="modal">
+        <!-- Modal for Paintdrops -->
+        <div id="paintDropsModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <video id="paintDropsModalVideo" src="assets/videos/paintdrops.mp4" muted autoplay
-              controls></video>
+            <video id="paintDropsModalVideo" src="assets/videos/paintdrops.mp4" muted autoplay controls></video>
           </div>
         </div>
         <!-- Modal for Black Jack Console game -->
@@ -500,17 +536,18 @@
               </div>
 
               <div class="description">
-                This is my C# project that I did in my 5th semester. This is a simple simulation that uses many algorithms to simulate paintdrops on a water surface.
+                This is my C# project that I did in my 5th semester. This is a simple simulation that uses many
+                algorithms to simulate paintdrops on a water surface.
 
               </div>
               <div class="lastRow">
                 <div class="tryIt">
                   <a href="#" id="paintDropsButton" class="popUpButton">View</a>
                 </div>
-                <!-- <div class="gitRepo" style="margin-left: 20px">
-                  <a href="https://gitlab.com/csy2dawson23-24/410/sections-1-and-2/sec2team8/csharpproject"
+                <div class="gitRepo" style="margin-left: 20px">
+                  <a href="https://gitlab.com/S0UR4Y/paintrdrops"
                     target="_blank" class="gitRepoButton">Git</a>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -562,10 +599,10 @@
                 <div class="tryIt">
                   <a href="#" id="recipeModalButton" class="popUpButton">View</a>
                 </div>
-                <!-- <div class="gitRepo" style="margin-left: 20px">
-                  <a href="https://gitlab.com/csy2dawson23-24/410/sections-1-and-2/sec2team8/csharpproject"
+                <div class="gitRepo" style="margin-left: 20px">
+                  <a href="https://gitlab.com/S0UR4Y/recipe-app"
                     target="_blank" class="gitRepoButton">Git</a>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -734,16 +771,18 @@
               </div>
 
               <div class="description">
-                This is my first major Android project, where we developed an app that allows users to download books online. The app parses the HTML content and uses a complex algorithm to render the books in a user-friendly interface.
+                This is my first major Android project, where we developed an app that allows users to download books
+                online. The app parses the HTML content and uses a complex algorithm to render the books in a
+                user-friendly interface.
               </div>
               <div class="lastRow">
                 <div class="tryIt">
                   <a href="#" id="bookModalButton" class="popUpButton">View</a>
                 </div>
-                <!-- <div class="gitRepo" style="margin-left: 20px">
-                  <a href="https://gitlab.com/dawson-csy3-24-25/511/section1/Nicholas-Anthony-Rayane/510-project-nicholas-anthony-rayane"
+                <div class="gitRepo" style="margin-left: 20px">
+                  <a href="https://gitlab.com/S0UR4Y/bookreading-app"
                     target="_blank" class="gitRepoButton">Git</a>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -852,7 +891,7 @@
             <!-- Vite -->
             <div class="skill">
               <div data-aos="zoom-in" data-aos-delay="100"
-                class="about p-4 bg-base rounded-5 intermediate-shadow fixed-height">
+                class="about p-4 bg-base rounded-5 advanced-shadow fixed-height">
                 <div class="skillIconBox" style="border: none; box-shadow: none; height: 60%">
                   <img src="assets/images/Vite.png" />
                 </div>
@@ -1014,8 +1053,8 @@
                 </h3>
               </div>
             </div>
-             <!-- Android Studio -->
-             <div class="skill">
+            <!-- Android Studio -->
+            <div class="skill">
               <div data-aos="zoom-in" data-aos-delay="100"
                 class="about p-4 bg-base rounded-5 intermediate-shadow fixed-height">
                 <div class="skillIconBox" style="border: none; box-shadow: none; height: 60%">

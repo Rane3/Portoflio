@@ -10,6 +10,7 @@
   --orange: #ffc107;
   --white: rgb(194, 212, 238);
 }
+
 .contactMe{
   height: 300px !important;
   background-color: var(--lvl5-blue);
@@ -92,6 +93,22 @@ img {
 }
 /* navbar */
 @media (min-width: 768px) {
+  .lower-container{
+    margin-bottom: 130px;
+  }
+  #myImage{
+    box-shadow: 2px orange 2px 2px;
+    width: 100%;
+    width: 200px;
+    border-radius: 3000px;
+    height: 200px;
+    box-shadow: 0px 0px 15px 5px rgb(255 255 255 / 30%);
+  }
+  #myImgContainer{
+    margin-bottom: 40px;
+    width: 200px;
+    height: 200px;
+  }
   .skill div h3{
     margin-top: 12px !important;
     color: white !important;
@@ -107,6 +124,8 @@ img {
     justify-content: left;
   }
   .mainNav {
+    display: flex;
+    justify-content: center;
     min-height: 100vh;
     width: 360px;
     background: var(--lvl5-blue);
@@ -142,6 +161,7 @@ img {
   #content-wrapper {
     padding-left: 367.5px;
   }
+
 }
 
 .mainNav .nav-link {
@@ -154,11 +174,19 @@ img {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .filter-name{
+    font-size: 15px !important;
+  }
 }
 @media (max-width: 768px) {
   /* .row{
     justify-content: center !important;
   } */
+ 
+  #myImage{
+    display: none;
+  }
+
   .skill {
     width: 167px;
     height: 167px;
@@ -201,6 +229,7 @@ img {
   .mainNav {
     background-color: var(--lvl5-blue);
   }
+  
 
   .mainNav-nav .nav-link:hover::after,
   .mainNav-nav .nav-link.active::after {
@@ -389,7 +418,7 @@ body::-webkit-scrollbar {
 /* projects */
 .label {
   height:100%;
-  border: white solid;
+  border: white solid 2px;
   border-radius: 20px;
   margin-right: 20px;
   padding-right: 20px;
@@ -405,22 +434,45 @@ body::-webkit-scrollbar {
 .html {
   background-color: #900bc9;
   font-weight: bold;
-  box-shadow: 0px 0px 8px 1px #ca66f5;
+  /* box-shadow: 0px 0px 8px 1px #ca66f5; */
+}
+.filter-name{
+  font-size: smaller;
+}
+.project-filters-box{
+  border: solid #ffffff 1px;
+  height: 50px;
+  width: auto;
+  padding: 0px 20px;
+  background: var(--lvl4-blue);
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 1px #031125b4;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  transition: all 0.5s;
+  flex-wrap: nowrap;
+
+}
+.project-filters-box:hover{
+  box-shadow: 0px 0px 30px 1px #ffffff5d;
+  transition: all 0.5s;
 }
 .java {
   background-color: #bb1010;
   font-weight: bold;
-  box-shadow: 0px 0px 8px 1px #bb1010;
+  /* box-shadow: 0px 0px 8px 1px #bb1010; */
 }
 .css {
   background-color: #900bc9;
   font-weight: bold;
-  box-shadow: 0px 0px 8px 1px #ca66f5;
+  /* box-shadow: 0px 0px 8px 1px #ca66f5; */
 }
 .javascript {
   background-color: #900bc9;
   font-weight: bold;
-  box-shadow: 0px 0px 8px 1px #ca66f5;
+  /* box-shadow: 0px 0px 8px 1px #ca66f5; */
 }
 .projectTitle{
   flex: 1;
@@ -430,12 +482,12 @@ body::-webkit-scrollbar {
 .react {
   background-color: #49ce1c;
   font-weight: bold;
-  box-shadow: 0px 0px 8px 1px #49ce1c;
+  /* box-shadow: 0px 0px 8px 1px #49ce1c; */
 }
 .novicel {
   background-color: #a6e1fa;
   font-weight: bold;
-  box-shadow: 0px 0px 8px 1px #a6e1fa;
+  /* box-shadow: 0px 0px 8px 1px #a6e1fa; */
 }
 .topProject{
   display: flex;
