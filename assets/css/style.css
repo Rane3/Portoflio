@@ -176,6 +176,7 @@ img {
   }
   .filter-name{
     font-size: 15px !important;
+    margin-left: 8px;
   }
 }
 @media (max-width: 768px) {
@@ -290,6 +291,7 @@ body::-webkit-scrollbar {
 }
 .shadow-effect:hover {
   box-shadow: 0px 0px 30px 1px #f9c529;
+  transition: box-shadow 0.5s, border 0.5s, background 0.5s;
 }
 .iconBox {
   border: #ffc107 solid;
@@ -438,6 +440,8 @@ body::-webkit-scrollbar {
 }
 .filter-name{
   font-size: smaller;
+  margin-left: 8px;
+  cursor: default;
 }
 .project-filters-box{
   border: solid #ffffff 1px;
@@ -453,12 +457,11 @@ body::-webkit-scrollbar {
   flex-direction: row;
   transition: all 0.5s;
   flex-wrap: nowrap;
+  transition: box-shadow 0.5s, border 0.5s, background 0.5s; /* Add transition only here */
+
 
 }
-.project-filters-box:hover{
-  box-shadow: 0px 0px 30px 1px #ffffff5d;
-  transition: all 0.5s;
-}
+
 .java {
   background-color: #bb1010;
   font-weight: bold;
