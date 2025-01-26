@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
   <link rel="stylesheet" href="./assets/css/extras.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/videos.css" />
+  <script defer src="./assets/js/videos.js"></script>
   <script defer src="./assets/js/aos.js"></script>
   <script defer src="./assets/js/bootstrap.bundle.min.js"></script>
   <script defer src="./assets/js/main.js"></script>
@@ -213,9 +215,17 @@
             ">
           Web Apps
         </p>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-        
-          <div class="row">
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video src="./assets/videos/MernApp.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
+          </div>
+          <div class="video-separator"></div>
+          <div class="row p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <div class="topProject">
@@ -262,11 +272,19 @@
           </div>
           
         </div>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-8">
-            <h3 class="text-brand" data-aos="fade-up" style="font-weight: bold; color: #dbe3e3"></h3>
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+        
+          <div class="video-container">
+            <video src="./assets/videos/AppointmentsApp.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
           </div>
-          <div class="row">
+          <div class="video-separator"></div>
+         
+          <div class="row  p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <div class="topProject">
@@ -299,9 +317,7 @@
               </div>
               <div class="lastRow">
 
-                <div class="tryIt">
-                  <a href="#" id="appointmentModalButton" class="popUpButton">View</a>
-                </div>
+              
                 <div class="gitRepo" style="margin-left: 20px">
                   <a href="https://gitlab.com/S0UR4Y/webdev-ii-group-project" target="_blank"
                     class="gitRepoButton">Git</a>
@@ -310,11 +326,17 @@
             </div>
           </div>
         </div>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-8">
-            <h3 class="text-brand" data-aos="fade-up" style="font-weight: bold; color: #dbe3e3"></h3>
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video src="./assets/videos/ColoursGame.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
           </div>
-          <div class="row">
+          <div class="video-separator"></div>
+          <div class="row p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <!-- <div class="Topp"> -->
@@ -405,59 +427,7 @@
             </div>
           </div> -->
         </div>
-        <!-- Modal for Recipe App -->
-        <div id="recipeModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="recipeVideo" muted autoplay controls>
-              <source src="assets/videos/RecipeApp.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-        <div id="bookModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="bookModalVideo" style="width: 700px; height: 700px;" autoplay controls>
-              <source src="assets/videos/Books.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </div>
-
-        <!-- Modal for Virtual Inventory System -->
-        <div id="virtualInventoryModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="virtualInventoryVideo" src="assets/videos/VirtualStorage.mp4" muted autoplay controls></video>
-          </div>
-        </div>
-        <div id="appointmentAppModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="appointmentAppVideo" src="assets/videos/AppointmentsApp.mp4" muted autoplay controls></video>
-          </div>
-        </div>
-        <!-- Modal for Virtual Superstore System -->
-        <div id="virtualSuperstoreModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="virtualSuperstoreVideo" src="assets/videos/VirtualSuperstore.mp4" muted autoplay
-              controls></video>
-          </div>
-        </div>
-        <!-- Modal for Paintdrops -->
-        <div id="paintDropsModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="paintDropsModalVideo" src="assets/videos/paintdrops.mp4" muted autoplay controls></video>
-          </div>
-        </div>
-        <!-- Modal for Black Jack Console game -->
-        <div id="blackJackModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <video id="blackJackVideo" src="assets/videos/BlackJack.mp4" muted autoplay controls></video>
-          </div>
-        </div>
+       
         <p class="skillSectionHeader" data-aos-delay="100" data-aos="fade-up" style="
               margin-top: 0px !important;
               font-size: 30px;
@@ -465,8 +435,17 @@
             ">
           Native Apps
         </p>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video src="./assets/videos/paintdrops.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
+          </div>
+          <div class="video-separator"></div>
+          <div class="row p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <div class="topProject">
@@ -494,9 +473,7 @@
 
               </div>
               <div class="lastRow">
-                <div class="tryIt">
-                  <a href="#" id="paintDropsButton" class="popUpButton">View</a>
-                </div>
+               
                 <div class="gitRepo" style="margin-left: 20px">
                   <a href="https://gitlab.com/S0UR4Y/paintrdrops"
                     target="_blank" class="gitRepoButton">Git</a>
@@ -505,8 +482,17 @@
             </div>
           </div>
         </div>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video src="./assets/videos/RecipeApp.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
+          </div>
+          <div class="video-separator"></div>
+          <div class="row p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <div class="topProject">
@@ -539,9 +525,7 @@
                 with each other.
               </div>
               <div class="lastRow">
-                <div class="tryIt">
-                  <a href="#" id="recipeModalButton" class="popUpButton">View</a>
-                </div>
+              
                 <div class="gitRepo" style="margin-left: 20px">
                   <a href="https://gitlab.com/S0UR4Y/recipe-app"
                     target="_blank" class="gitRepoButton">Git</a>
@@ -550,8 +534,17 @@
             </div>
           </div>
         </div>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video src="./assets/videos/VirtualStorage.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
+          </div>
+          <div class="video-separator"></div>
+          <div class="row p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <div class="topProject">
@@ -583,9 +576,7 @@
                 seamless storage and retrieval of information.
               </div>
               <div class="lastRow">
-                <div class="tryIt">
-                  <a href="#" id="openModalButton" class="popUpButton">View</a>
-                </div>
+             
                 <div class="gitRepo" style="margin-left: 20px">
                   <a href="https://gitlab.com/S0UR4Y/proggraming-iii-final-project" target="_blank"
                     class="gitRepoButton">Git</a>
@@ -594,8 +585,17 @@
             </div>
           </div>
         </div>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video src="./assets/videos/VirtualSuperstore.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
+          </div>
+          <div class="video-separator"></div>
+          <div class="row p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <div class="topProject">
@@ -620,9 +620,7 @@
                 updating records, the program provides a simple interface for interacting with the database.
               </div>
               <div class="lastRow">
-                <div class="tryIt">
-                  <a href="#" id="virtualsuperstoreButton" class="popUpButton">View</a>
-                </div>
+             
                 <div class="gitRepo" style="margin-left: 20px;">
                   <a href="https://gitlab.com/S0UR4Y/database-ii-final-project" target="_blank"
                     class="gitRepoButton">Git</a>
@@ -632,8 +630,17 @@
 
           </div>
         </div>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video src="./assets/videos/BlackJack.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
+          </div>
+          <div class="video-separator"></div>
+          <div class="row p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <div class="topProject">
@@ -656,9 +663,7 @@
                 principles and class inheritance.
               </div>
               <div class="lastRow">
-                <div class="tryIt">
-                  <a href="#" id="blackJackModalButton" class="popUpButton">View</a>
-                </div>
+              
                 <div class="gitRepo" style="margin-left: 20px;">
                   <a href="https://gitlab.com/S0UR4Y/java2winter2023project" target="_blank"
                     class="gitRepoButton">Git</a>
@@ -675,8 +680,17 @@
       ">
           Mobile Apps
         </p>
-        <div class="row p-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
+        <div class="row no-wrap justify-content-center flex-nowrap align-items-center flex-row p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-container">
+            <video src="./assets/videos/Books.mp4"></video>
+            <button class="play-btn">▶</button>
+            <div class="controls">
+              <input type="range" class="progress" min="0" max="100" value="0">
+              <button class="fullscreen-btn">⛶</button>
+            </div>
+          </div>
+          <div class="video-separator"></div>
+          <div class="row p-container">
             <div class="col-12 projectContainer">
               <div class="firstroww">
                 <div class="topProject">
@@ -703,9 +717,7 @@
                 user-friendly interface.
               </div>
               <div class="lastRow">
-                <div class="tryIt">
-                  <a href="#" id="bookModalButton" class="popUpButton">View</a>
-                </div>
+              
                 <div class="gitRepo" style="margin-left: 20px">
                   <a href="https://gitlab.com/S0UR4Y/bookreading-app"
                     target="_blank" class="gitRepoButton">Git</a>

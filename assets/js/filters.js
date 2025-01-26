@@ -8,19 +8,19 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(webAppsContent);
     webCheckbox.addEventListener('change', function () {
         webAppsContent.forEach(el => {
-            el.style.display = this.checked ? 'block' : 'none';
+            el.style.display = this.checked ? 'flex' : 'none';
             AOS.refresh();
         });
     });
     nativeCheckbox.addEventListener('change', function () {
         nativeAppsContent.forEach(el => {
-            el.style.display = this.checked ? 'block' : 'none';
+            el.style.display = this.checked ? 'flex' : 'none';
             AOS.refresh();
         });
     });
     mobileCheckbox.addEventListener('change', function () {
         mobileAppsContent.forEach(el => {
-            el.style.display = this.checked ? 'block' : 'none';
+            el.style.display = this.checked ? 'flex' : 'none';
             AOS.refresh();
         });
     });
