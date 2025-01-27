@@ -352,8 +352,31 @@ img {
   /* Add a scale transformation to make the button slightly smaller when pressed */
 }
 
+body {
+  --sb-track-color: var(--lvl3-blue);
+  --sb-thumb-color: #ffffff1a;
+  --sb-size: 14px;
+}
+
 body::-webkit-scrollbar {
-  width: 0;
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent
+
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
 }
 
 /* about me */
