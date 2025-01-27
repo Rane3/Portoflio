@@ -227,7 +227,7 @@ img {
     margin-left: 8px;
   }
 }
-@media (max-width:1610px) {
+@media (max-width:70rem) {
   video:not(.playing):not(:fullscreen) {
     filter: blur(0px) !important;
 }
@@ -694,7 +694,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .p-container{
-  width: 650px;
+  width: 35vw;
    
 }
 .video-separator{
@@ -719,6 +719,7 @@ body::-webkit-scrollbar-thumb {
   border: 3px var(--special-text) solid;
   font-weight: bold;
   border-radius: 15px;
+  white-space: nowrap;
 
 }
 
@@ -749,7 +750,7 @@ body::-webkit-scrollbar-thumb {
 .lastRow {
   display: flex;
   margin-top: 30px;
-  flex-wrap: wrap;
+ 
 }
 
 .popup-video {
