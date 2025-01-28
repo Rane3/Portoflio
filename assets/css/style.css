@@ -206,6 +206,7 @@ img {
 }
 
 .mainNav .nav-link {
+  white-space: nowrap;
   font-weight: 700;
   text-transform: uppercase;
   padding-left: 20px !important;
