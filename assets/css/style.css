@@ -45,7 +45,9 @@ h6 {
 
   font-weight: 400;
 }
-
+.link-icon{
+  width: 35px;
+}
 .project-logos i {
   margin-right: 5px;
 }
@@ -313,7 +315,7 @@ img {
   }
 
   .mainNav-nav .nav-link.active {
-    color: #ffc107;
+   color: #ff0018;
   }
 }
 
